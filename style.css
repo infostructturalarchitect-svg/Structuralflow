@@ -226,14 +226,17 @@ body {
 .hero-image-placeholder {
     width: 100%;
     border-radius: 20px;
-    background:
-        radial-gradient(circle at 10% 0%, rgba(255, 255, 255, 0.12), transparent 55%),
-        linear-gradient(145deg, #161825, #0a0b16);
     border: 1px solid rgba(255, 255, 255, 0.06);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
     position: relative;
     overflow: hidden;
     min-height: 220px;
+
+    /* BURASI ÖNEMLİ: Arka plana senin bannerı bağlıyoruz */
+    background-image: url("../sitebanner2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-image-placeholder::after {
